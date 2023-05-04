@@ -1,5 +1,8 @@
 server:
   port: 8080
+jwt:
+  secret: rqwtsdagfo512345kjgwqerdt
+  expire: 86400
 
 database:
   type: postgres

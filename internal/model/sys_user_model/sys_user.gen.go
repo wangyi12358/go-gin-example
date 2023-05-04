@@ -29,7 +29,7 @@ type SysUser struct {
 	State        int16          `gorm:"column:state" json:"state"`                 // 状态，0：禁用，1：启用，2：锁定
 	DepartmentID int64          `gorm:"column:department_id" json:"department_id"` // 部门id
 	RoleID       int64          `gorm:"column:role_id" json:"role_id"`
-	Eamil        string         `gorm:"column:eamil" json:"eamil"`
+	Email        string         `gorm:"column:email" json:"email"`
 }
 
 // TableName SysUser's table name

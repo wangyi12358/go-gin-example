@@ -20,12 +20,18 @@ type Server struct {
 	Port int
 }
 
-type ConfigStruct struct {
-	Server   Server
-	Database Database
+type Jwt struct {
+	Secret string
+	Expire int // 过期时间、秒为单位
 }
 
-var Config ConfigStruct
+type Conf struct {
+	Server   Server
+	Database Database
+	Jwt      Jwt
+}
+
+var Config Conf
 
 func Setup() {
 	env := os.Getenv("ENV")
