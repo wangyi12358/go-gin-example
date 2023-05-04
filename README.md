@@ -9,8 +9,14 @@ $ make start_service
 $ make build_service
 ```
 
+## Generate model
+* Modify the configuration of gen.yaml
+```bash
+$ make gen-db-model
+```
+
 ## Tech Stack
-1. gin
-2. gorm
-3. gentool
-4. postgresql
+1. Gin
+2. Gorm
+3. Gentool
+4. Postgresql
