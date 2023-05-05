@@ -22,5 +22,5 @@ func main() {
 	corsConfig.AllowHeaders = []string{"Origin", "Content-Length", "Content-Type", "Authorization"}
 	r.Use(cors.New(corsConfig))
 	router.InitRouter(r)
-	r.Run(fmt.Sprintf(";%d", config.Config.Server.Port))
+	r.Run(fmt.Sprintf(":%d", config.Config.Server.Port))
 }

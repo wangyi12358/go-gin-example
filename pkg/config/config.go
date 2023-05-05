@@ -46,7 +46,7 @@ func Setup() {
 	viper.AddConfigPath("./config/")
 	viper.SetConfigType("yaml")
 	err := viper.ReadInConfig()
-	if viper.Unmarshal(Config) != nil {
+	if viper.Unmarshal(&Config) != nil {
 		panic(fmt.Errorf("Fatal error config file: %s \n", err))
 	}
 }

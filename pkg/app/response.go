@@ -1,8 +1,8 @@
 package app
 
 import (
-	"aigc-backend/pkg/e"
 	"github.com/gin-gonic/gin"
+	"go-gin-example/pkg/e"
 	"net/http"
 )
 

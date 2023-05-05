@@ -4,9 +4,9 @@
 ```bash
 $ go download
 
-$ make start_service
+$ make start-service
 
-$ make build_service
+$ make build-service
 ```
 
 ## Generate model

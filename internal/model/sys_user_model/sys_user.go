@@ -1,13 +1,13 @@
 package sys_user_model
 
 import (
-	"doc-server/models"
 	"fmt"
+	"go-gin-example/pkg/model"
 )
 
 func Login(username string, password string) (*SysUser, error) {
 	var sysUser SysUser
-	err := models.DB.Where(&SysUser{
+	err := model.DB.Where(&SysUser{
 		Username: username,
 		Password: password,
 	}).First(sysUser).Error
@@ -20,7 +20,7 @@ func Login(username string, password string) (*SysUser, error) {
 
 func FindById(id int64) (*SysUser, error) {
 	var user SysUser
-	if err := models.DB.First(&user, id).Error; err != nil {
+	if err := model.DB.First(&user, id).Error; err != nil {
 		return nil, err
 	}
 	return &user, nil
