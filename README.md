@@ -1,22 +1,31 @@
-# go-gin-example
+# Go gin
 
-## Quick Start
+## 快速开始
+安装依赖
 ```bash
-$ go download
+go download
 
-$ make start-service
-
-$ make build-service
+```
+启动服务
+```bash
+make start-service
+```
+打包服务
+```bash
+make build-servicez
 ```
 
-## Generate model
-* Modify the configuration of gen.yaml
+## 生成数据库 Model
+首先修改 `gen.yaml` 中的数据库配置，然后执行以下命令
 ```bash
 $ make gen-db-model
 ```
 
-## Tech Stack
-1. Gin
-2. Gorm
-3. Gentool
-4. Postgresql
+## 支持的功能
+- [x] 生成数据库 Model
+- [x] Restful API
+- [ ] GraphQL API
+- [ ] I18n
+- [ ] 全局 panic 捕获
+- [ ] 定时任务
+- [ ] Swagger 文档

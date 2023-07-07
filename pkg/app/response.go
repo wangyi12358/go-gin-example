@@ -46,3 +46,11 @@ func (g *Gin) Error(errCode int, msg string) {
 		Data: nil,
 	})
 }
+
+func (g *Gin) ErrorCode(errCode int) {
+	g.C.JSON(200, Response{
+		Code: errCode,
+		Msg:  e.GetMsg(errCode),
+		Data: nil,
+	})
+}
