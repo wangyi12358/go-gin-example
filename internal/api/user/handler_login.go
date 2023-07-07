@@ -20,15 +20,6 @@ type LoginResponse struct {
 	Expire int    `json:"expire"`
 }
 
-// Login PingExample godoc
-// @Summary ping example
-// @Schemes
-// @Description 登录
-// @Tags example
-// @Accept json
-// @Produce json
-// @Success 200 {string} Helloworld
-// @Router /api/login [get]
 func (h *handler) Login(c *gin.Context) {
 	a := app.Gin{C: c}
 	req := new(LoginRequest)

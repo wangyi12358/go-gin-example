@@ -25,7 +25,5 @@ $ make gen-db-model
 - [x] 生成数据库 Model
 - [x] Restful API
 - [ ] GraphQL API
-- [ ] I18n
 - [ ] 全局 panic 捕获
 - [ ] 定时任务
-- [ ] Swagger 文档
